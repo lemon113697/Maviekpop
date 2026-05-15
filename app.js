@@ -106,9 +106,10 @@ async function initApp() {
 ══════════════════════════════════════════ */
 async function fetchEXOTracks() {
   const queries = [
-    { term: 'EXO',   entity: 'song', limit: 200 },
-    { term: 'EXO-K', entity: 'song', limit: 100 },
-    { term: 'EXO-M', entity: 'song', limit: 100 },
+    { term: 'EXO',          entity: 'song', limit: 200 },
+    { term: 'EXO-K',        entity: 'song', limit: 100 },
+    { term: 'EXO-M',        entity: 'song', limit: 100 },
+    { term: 'EXO Reverse',  entity: 'song', limit: 50  },
   ];
 
   const allResults = await Promise.all(
